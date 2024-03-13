@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createpaste</title>
+    
+    <div class="container">
+        <form action="createpaste" method="post">
+            <label for="username"><b>Username</b></label>
+            <input type = "text" placeholder="username" name="username" value="{{ username }}" required/>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="password" name="password" required/>
+
+            <label for="title"><b>Title</b></label>
+            <input type="text" placeholder="title" name="title" required/>
+
+            <label for="content"><b>Content</b></label>
+            <input type="text" placeholder="content" name="content" required />
+
+            <button type="submit">create user</button>
+        </form>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

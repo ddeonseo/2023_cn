@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+  </head>
+  <body>
+    <h1>{{countpastes}} Pastes for {{ name }}</h1>
+    {% if pastes %}
+    <ul>
+      {% for paste in pastes %}
+      <li>{{ paste.title }} - {{ paste.content }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No pastes found for this user.</p>
+    {% endif %}
+  </body>
+</html>
